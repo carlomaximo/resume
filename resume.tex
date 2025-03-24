@@ -1,11 +1,12 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
+% Author : Carlo Maximo
+% Based off of: https://github.com/jakegut/resume, https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
+
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -18,6 +19,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome} % https://mirrors.ibiblio.org/CTAN/fonts/fontawesome/doc/fontawesome.pdf
 \input{glyphtounicode}
 
 
@@ -112,10 +114,10 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-    \href{https://github.com/...}{\underline{github.com/jake}}
+    \textbf{\Huge \scshape Carlo Maximo} \\ \vspace{1pt}
+    \small {\faPhone{} (647) 553 5489} $|$ \href{mailto:maximocgc@outlook.com}{\faEnvelope{} \underline{maximocgc@outlook.com}} $|$ 
+    \href{https://linkedin.com/in/carlomaximo}{\faLinkedinSquare{} \underline{linkedin.com/in/carlomaximo}} $|$
+    \href{https://github.com/carlomaximo}{\faGithub{} \underline{github.com/carlomaximo}}
 \end{center}
 
 
@@ -123,25 +125,30 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
+      {Sheridan College}{Brampton, ON}
+      {Diploma, Computer Programming. GPA. 3.98/4.00}{Jan. 2024 -- April 2025}
+        \resumeItemListStart
+            \resumeItem{\textbf{Relevant Coursework:} {Object-Oriented Programming, Data Structures \& Algorithms, Database Design \& Implementation, Programming \& Data Visualization.}}
+        \resumeItemListEnd
     \resumeSubheading
-      {Blinn College}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+      {University of the Philippines Diliman}{Quezon City, Philippines}
+      {Bachelor of Science, Geology}{Aug. 2018 -- Sept. 2021}
+        \resumeItemListStart
+            \resumeItem{\textbf{Relevant Coursework:} {GIS, Field Methods, Geologic Mapping \& Modelling, Programming.}}
+        \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {Sheridan College}{Brampton, ON}
+        {Peer Mentor}{Oct. 2024 - Present}
+        \resumeSubSubheading{Start of Term Ambassador}{Aug. 2024 - Oct. 2024}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItem{As a Peer Mentor, organized and facilitated over 20 hallway activities to promote student success.}
+        \resumeItem{Assisted students at the front desk by addressing inquiries and directing them to relevant resources.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -155,24 +162,20 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
+      {Institutional Shareholder Services}{Makati City, Philippines}
+      {Junior Analyst}{Apr. 2022 - Oct. 2023}
       \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+        \resumeItem{Collected and analyzed corporate governance data for over 200 publicly traded companies across Germany, Switzerland, Austria, and Liechtenstein.}
+        \resumeItem{Monitored corporate news and events to ensure the accuracy and currency of collected data.}
+        \resumeItem{Responded to client feedback and inquiries, ensuring data alignment with current internal data collection guidelines, and explaining the company's methodologies when necessary.}
+        \resumeItem{Tracked AGM materials across the EMEA region and led refresher trainings for colleagues.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
+      {Rev.com}{Remote}
+      {Transcriptionist}{Sept. 2021 - March 2022}
       \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+        \resumeItem{Transcribed audio and video content with high accuracy for clients.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -182,26 +185,30 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          {\textbf{Blackjack (\hyperlink{https://github.com/carlomaximo/blackjack}{\faGithub})} $|$ \emph{C\#}}
+          {Jan. 2025}
           \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
+            \resumeItem{Implemented software development principles by organizing the code into modular, reusable classes.}
+            \resumeItem{Followed object-oriented programming principles such as encapsulation and inheritance to structure game logic.}
+
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
+%-----------LEADERSHIP & ACTIVITIES------
+\section{Leadership \& Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Sheridan College - Pinoy Students' Organization (PISO)}{}{Executive}{Nov. 2024 - Present}
+        \resumeItemListStart
+            \resumeItem{Managed two club events, enhancing community engagement within the Filipino student body.}
+        \resumeItemListEnd
 
+        \resumeSubheading{Google Developers Group at Sheridan College}{}{Volunteer}{Nov. 2024}
+        \resumeItemListStart
+            \resumeItem{Supported the execution of GDG DevFest 2024, assisting with event logistics and registration.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
