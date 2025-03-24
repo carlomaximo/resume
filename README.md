@@ -1,3 +1,5 @@
+# Forked from jakegut's LaTeX [resume template](https://github.com/jakegut/resume).
+
 # resume
 LaTeX template for my personal resume
 
